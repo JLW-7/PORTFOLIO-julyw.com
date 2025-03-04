@@ -4,23 +4,190 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>July - Personal Portfolio Webpage</title>
+  <title>July Wu | Aspiring Full Stack Developer</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="manifest" href="assets/site.webmanifest">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/2aeef54d7a.js" crossorigin="anonymous"></script>
 </head>
-<body>
 
-  <!-- Header with Navigation -->
-  <header>
-    <nav>
-      <div class="logo">
-        <h1>July Wu</h1>
-        <p>Web Developer</p>
+<body>
+    <!-- Header -->
+    <header>
+      <div class="logo-container">
+        <div class="logo-special"><a href="https://julyw.com">JULYW</a></div>
+        <div class="logo"><a href="https://julyw.com">.com</a></div>
       </div>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+      <nav>
+          <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a><a href="https://github.com/JLW-7" target="_blank">Github</a><a href="mailto:july.777.wu@gmail.com" target="_blank">Email</a>
+      </nav>
+    </header>
+
+    <!-- Banner -->
+    <div class="banner">
+      <div class="banner-content">
+        <div class="banner-heading">
+          <h2>Hi there, </h2>
+          <h1>I'm July Wu</h1>
+        </div>
+        <div class="banner-text">
+          <p>I'm an aspiring student<p>
+          <div class="banner-text-highlight"><p>full-stack developer</p></div>
+          <p>with a love for coding, astronomy, and sports.</p>
+        </div>
+      </div>
+      <img src="assets/images/computer-removebg-preview.png" alt="cute computer cartoon">
+    </div>
+
+    <!-- About Me -->
+    <div class="about-me" id="about">
+      <div class="about-me-image"><img src="assets/images/julywu.jpg" alt="July Wu" class="slide-in-image"></div>
+      <div class="about-me-content">
+        <h3>About Me</h3>
+        <p>I'm July, a full-stack developer with particular interest in web and app development, artificial intelligence, and cybersecurity. I constantly explore new technologies to build innovative projects that positively impact the world. Beyond coding, I'm deeply interested in astronomy (black holes, strange matter, stargazing...), sports (swimming, volleyball...) and investment.</p>
+      </div>
+    </div>
+
+    <div class="skills" id="skills">
+      <h3>Skills</h3>
+      <div class="skills-content">
+
+        <div class="programming-langs">
+          <p>Programming languages</p>
+          <ul>
+            <li>Python</li>
+            <li>C++</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Javascript</li>
+          </ul>
+        </div>
+
+        <div class="front-end">
+          <p>Front-End Development</p>
+          <ul>
+            <li>UI/UX Design</li>
+            <li>CSS Animations & Transitions</li>
+            <li>Javascript DOM Manipulation</li>
+            <li>Responsive Web Design</li>
+          </ul>
+        </div>
+
+        <div class="back-end">
+          <p>Back-End Development</p>
+          <ul>
+            <li>RESTful APIs</li>
+            <li>SQL</li>
+            <li>GraphQL</li>
+            <li>Node.js</li>
+            <li>NoSQL (MongoDB)</li>
+          </ul>
+        </div>
+
+        <div class="frames-libs">
+          <p>Frameworks & Libraries</p>
+          <ul>
+            <li>Django</li>
+            <li>Flask</li>
+            <li>React</li>
+            <li>Bootstrap</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="projects" id="projects">
+      <h3>Projects</h3>
+        <ul>
+          <li class="project-card">
+            <a href="https://numeracalc.com/">
+                <div class="project-icon">
+                    <img src="assets/images/project-icons/numera-favicon.png" alt="A simple calculator icon, designed for the Numera Calculator">
+                    <p class="project-title">Numera</p>
+                </div>
+            </a>
+            <p class="project-description">
+              A versatile calculator web app with multiple calculations, conversions, and a user-friendly interface.
+              Visit its <a href="https://github.com/JLW-7/Numera-Calculator-Website" target="_blank">GitHub repository</a> for more details, or visit the <a href="https://numeracalc.com/" target="_blank">Numera website</a> for actual experience.
+            </p>
+          </li>
+          <li class="project-card-flexbox">
+            <div class="project-card-2">
+              <a href="https://github.com/JLW-7/Helicopter-Game-In-Javascript" target="_blank">
+                  <div class="project-icon">
+                      <img src="assets/images/project-icons/chopperdash-favicon.png" alt="A simple green helicopter icon designed for the ChopperDash game">
+                      <p class="project-title">ChopperDash</p>
+                  </div>
+              </a>
+              <p class="project-description">
+                A simple helicopter video game built with javascript where players avoid obstacles and collect coins to score points.
+                Visit its <a href="https://github.com/JLW-7/Helicopter-Game-In-Javascript" target="_blank">GitHub repository</a> for more details.
+              </p>
+            </div>
+            <div class="project-card-2">
+              <a href="https://github.com/JLW-7/Penguin-Pi-Reminder-Assistant" target="_blank">
+                <div class="project-icon">
+                    <img src="assets/images/project-icons/pi-website-favicon.png" alt="A simple penguin icon designed for the Penguin Pi Reminder Assistant">
+                    <p class="project-title">Penguin Pi</p>
+                </div>
+              </a>
+              <p class="project-description">
+                A smart voice-interactive reminder assistant built with Arduino, designed to help users remember essential items in daily life.
+                Visit its <a href="https://github.com/JLW-7/Penguin-Pi-Reminder-Assistant" target="_blank">GitHub repository</a> for more details.
+              </p>
+            </div>
+          </li>
+          <li class="project-card">
+            <a href="https://numeracalc.com/">
+                <div class="project-icon">
+                    <p class="project-title">Eclipsed</p>
+                </div>
+            </a>
+            <p class="project-description">
+              A 2d game where players aim to avoid light and stay in the shadows, built with Godot using GDScript. Visit its <a href="https://github.com/JLW-7/Eclipsed" target="_blank">GitHub repository</a> for more details.
+            </p>
+          </li>
+        </ul>
+    </div>
+
+    
+    <div class="contact" id="contact"> 
+      <h3>Contact</h3>
+      <h4>Want to collaborate? Feel free to contact and connect with me!</h4>
+      <div class="contact-content-1">
+        <a href="mailto:july.777.wu@gmail.com" target="_blank">
+          <i class="fa fa-envelope"></i>
+        </a>
+        <a href="https://github.com/JLW-7" target="_blank">
+          <i class="fa fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/july-wu-85b3052a1/" target="_blank">
+          <i class="fa fa-linkedin"></i>
+        </a>
+        <a href="https://www.youtube.com/@julywu7" target="_blank">
+          <i class="fa fa-youtube"></i>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61572697954233" target="_blank">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://stackoverflow.com/users/29459174/july" target="_blank">
+          <i class="fa-brands fa-stack-overflow"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <h3>julyw.com</h3>
+      <p>&copy; 2025 julyw.com. All Rights Reserved.</p>
+    </footer>
+    
+
+<script src="script.js"></script>
+</body>
+</html>
+
