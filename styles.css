@@ -23,6 +23,7 @@ header {
   align-items: center; 
   background-color: #93c2ff;
   padding: 20px;
+  opacity: 0.9;
 }
 
 header a{
