@@ -133,6 +133,15 @@ nav a:hover {
   }
 }
 
+.org-button {
+  margin-top: 20px;
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 40px;
+  border: 2px solid white;
+  max-width: 200px;
+}
+
 .banner-text, .banner img{
   animation-delay: 0.15s;
 }
