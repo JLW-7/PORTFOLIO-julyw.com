@@ -134,8 +134,7 @@ nav a:hover {
 }
 
 .org-button {
-  margin-top: 50px;
-  padding: 15px;
+  padding: 5px 15px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -345,6 +344,13 @@ nav a:hover {
   margin-bottom: 100px;
 }
 
+.contact-content{
+  display: flex;
+  align-items: baseline;
+  gap: 30px;
+  margin-top: 40px;
+}
+
 .contact-content-1{
   display: flex;
   gap: 50px;
@@ -354,7 +360,7 @@ nav a:hover {
 .contact-content-1 i{
   text-decoration: none;
   color: white;
-  font-size: 50px;
+  font-size: 30px;
   transition: all 0.2s ease;
 }
 
