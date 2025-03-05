@@ -79,15 +79,16 @@ nav a:hover {
 .banner {
   margin-top: 100px;
   margin-left: 100px;
-  margin-bottom: 205px;
+  margin-bottom: 140px;
   display: flex;
   justify-content: space-between;
 }
 
 .banner img{
-  width: 20%;
-  height: 20%;
+  width: 25%;
+  height: 25%;
   margin-right: 100px;
+  margin-top: 70px;
 }
 
 .banner-heading h2{
@@ -109,6 +110,7 @@ nav a:hover {
   display: flex; 
   gap: 5px; 
   color: rgb(205, 223, 244);
+  margin-bottom: 60px;
 }
 
 .banner-text-highlight{
@@ -348,12 +350,12 @@ nav a:hover {
   display: flex;
   align-items: baseline;
   gap: 30px;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .contact-content-1{
   display: flex;
-  gap: 50px;
+  gap: 30px;
   text-align: center;
 }
 
