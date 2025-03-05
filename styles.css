@@ -116,7 +116,7 @@ nav a:hover {
   font-weight:600;
 } 
 
-.banner-heading, .banner-text, .banner img {
+.banner-heading, .banner-text, .banner img , .org-button{
   opacity: 0;
   transform: translateY(50px);
   animation: floatUp 0.5s ease-out forwards;
@@ -142,10 +142,11 @@ nav a:hover {
   box-sizing: border-box;
   border-radius: 40px;
   border: 2px solid white;
-  max-width: 210px;
+  max-width: 235px;
   text-decoration: none;
   color: white;
   transition: all 0.2s ease;
+  animation-delay: 0.15s;
 }
 
 .org-button img{
