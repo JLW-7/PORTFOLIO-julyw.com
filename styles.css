@@ -77,7 +77,7 @@ nav a:hover {
 }
 
 .banner {
-  margin-top: 120px;
+  margin-top: 100px;
   margin-left: 100px;
   margin-bottom: 205px;
   display: flex;
@@ -143,6 +143,8 @@ nav a:hover {
   border-radius: 40px;
   border: 2px solid white;
   max-width: 210px;
+  text-decoration: none;
+  color: white;
 }
 
 .org-button img{
