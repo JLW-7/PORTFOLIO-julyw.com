@@ -145,12 +145,18 @@ nav a:hover {
   max-width: 210px;
   text-decoration: none;
   color: white;
+  transition: all 0.2s ease;
 }
 
 .org-button img{
   width: 30px;
   height: auto;
   margin:0;
+}
+
+.org-button:hover{
+  background-color: white;
+  color: #256dfe;
 }
 
 .banner-text, .banner img{
