@@ -118,7 +118,7 @@ nav a:hover {
   font-weight:600;
 } 
 
-.banner-heading, .banner-text, .banner img , .org-button{
+.banner-heading, .banner-text, .banner img , .banner hr, .contact-content{
   opacity: 0;
   transform: translateY(50px);
   animation: floatUp 0.5s ease-out forwards;
@@ -163,6 +163,10 @@ nav a:hover {
 
 .banner-text, .banner img{
   animation-delay: 0.15s;
+}
+
+.contact-content, .banner hr{
+  animation-delay: 0.2s;
 }
 
 .contact-content{
