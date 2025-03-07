@@ -165,6 +165,54 @@ nav a:hover {
   animation-delay: 0.15s;
 }
 
+.contact-content{
+  display: flex;
+  align-items: baseline;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.contact-content-1{
+  display: flex;
+  gap: 30px;
+  text-align: center;
+}
+
+.contact-content-1 i{
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  transition: all 0.2s ease;
+}
+
+.contact-content-1 i:hover{
+  transform: translateY(-5px);
+} 
+
+.fa-envelope:hover{
+  color: rgb(216, 216, 216);
+}
+
+.fa-youtube:hover{
+  color: rgb(255, 0, 0);
+}
+
+.fa-linkedin:hover{
+  color: rgb(0, 119, 181);
+}
+
+.fa-github:hover{
+  color: #000000;
+}
+
+.fa-stack-overflow:hover{
+  color: rgb(255, 153, 0);
+}
+
+.fa-facebook:hover{
+  color:  #0055fe;
+}
+
 .about-me {
   color: white;
   text-align: right;
@@ -326,72 +374,6 @@ nav a:hover {
   color: #dadada;
   margin-top: 5px;
   margin-left: 15px;
-}
-
-.contact {
-  background-color: #3066ca;
-  padding:100px;
-}
-
-.contact h3{
-  font-size: 60px;
-  text-align: left;
-}
-
-.contact h4{
-  font-size: 30px;
-  text-align: right;
-  color: #a1c0ff;
-  font-style: italic;
-  margin-bottom: 100px;
-}
-
-.contact-content{
-  display: flex;
-  align-items: baseline;
-  gap: 30px;
-  margin-top: 20px;
-}
-
-.contact-content-1{
-  display: flex;
-  gap: 30px;
-  text-align: center;
-}
-
-.contact-content-1 i{
-  text-decoration: none;
-  color: white;
-  font-size: 30px;
-  transition: all 0.2s ease;
-}
-
-.contact-content-1 i:hover{
-  transform: translateY(-5px);
-} 
-
-.fa-envelope:hover{
-  color: rgb(216, 216, 216);
-}
-
-.fa-youtube:hover{
-  color: rgb(255, 0, 0);
-}
-
-.fa-linkedin:hover{
-  color: rgb(0, 119, 181);
-}
-
-.fa-github:hover{
-  color: #000000;
-}
-
-.fa-stack-overflow:hover{
-  color: rgb(255, 153, 0);
-}
-
-.fa-facebook:hover{
-  color:  #0055fe;
 }
 
 footer {
