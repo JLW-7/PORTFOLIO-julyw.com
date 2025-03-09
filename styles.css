@@ -399,20 +399,21 @@ nav a:hover {
   font-size: 80px;
 }
 
-.support{
-  text-align: right;
-}
-
 .sponsor-me h4{
   font-size: 30px;
   margin-bottom: 50px;
+  text-align: right;
 }
 
-.buy-me-a-coffee{
-  background-color: yellow;
-  padding: 20px;
-  max-width: fit-content;
+.how-support{
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
 }
+
+
 
 footer {
   background-color:rgb(1, 1, 107);
