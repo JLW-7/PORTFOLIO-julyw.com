@@ -380,6 +380,40 @@ nav a:hover {
   margin-left: 15px;
 }
 
+.sponsor-me{
+  padding: 100px;
+  background-color: #2a64d7;
+  text-align: left;
+}
+
+.sponsor-me h3{
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+
+.sponsor-me p{
+  font-size: 18px;
+}
+
+.sponsor-highlight{
+  font-size: 80px;
+}
+
+.support{
+  text-align: right;
+}
+
+.sponsor-me h4{
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+.buy-me-a-coffee{
+  background-color: yellow;
+  padding: 20px;
+  max-width: fit-content;
+}
+
 footer {
   background-color:rgb(1, 1, 107);
   color: #ecf0f1;
