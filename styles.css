@@ -409,8 +409,12 @@ nav a:hover {
   font-size: 20px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   gap: 20px;
+}
+
+.sponsor-me h4{
+  text-align: center;
 }
 
 footer {
