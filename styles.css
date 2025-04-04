@@ -17,6 +17,7 @@ header {
   z-index: 1000;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: flex; 
+  backdrop-filter: blur(30px);
   justify-content: space-between; 
   align-items: center; 
   background-color: #93c2ff;
@@ -219,11 +220,19 @@ nav a:hover {
 
 .about-me {
   color: white;
-  text-align: right;
   background-color: #000099;
+  padding: 100px;
+}
+
+.who-am-i{
   display: flex;
   align-items: center;
-  padding: 100px;
+  text-align: right;
+  margin-bottom: 80px;
+}
+
+.who-am-i-content{
+  display: block;
 }
 
 .about-me h3{
@@ -233,6 +242,24 @@ nav a:hover {
 
 .about-me p{
   font-size: 18px;
+}
+
+.about-me h4{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.what-i-like{
+  margin-bottom: 70px;
+}
+
+.what-i-like ul{
+  font-size: 18px;
+  margin-left: 15px;
+}
+
+.right-now{
+  text-align: right;
 }
 
 .about-me-image img{
@@ -269,6 +296,10 @@ nav a:hover {
   font-size: 20px;
   display: flex;
   gap: 86px;
+}
+
+.skills p{
+  margin-top: 50px;
 }
 
 .programming-langs ul, .front-end ul, .back-end ul, .frames-libs ul{
