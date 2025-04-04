@@ -259,14 +259,30 @@ nav a:hover {
 }
 
 .right-now{
-  text-align: right;
+  display: flex;
+  align-items: center;
 }
 
-.about-me-image img{
+.right-now-content{
+  display: block;
+}
+
+.about-me img{
   max-width: 80%; 
   height: auto; 
   border-radius: 15px;
   margin-right: 100px;
+}
+
+.about-me-gif img{
+  margin: 0;
+  margin-left: 100px;
+}
+
+.about-me-gif p{
+  font-size: 10px;
+  margin-bottom: 10px;
+  margin-left: 100px;
 }
 
 .about-me-image img.slide-in-image {
