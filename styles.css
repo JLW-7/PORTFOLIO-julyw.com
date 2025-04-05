@@ -5,6 +5,10 @@
   scroll-behavior: smooth;
 }
 
+.about-me, .skills, .projects, .sponsor-me{
+  line-height: 1.5;
+}
+
 body {
   font-family: "Avenir", "Nunito", sans-serif;
   background-color: #256dfe;
