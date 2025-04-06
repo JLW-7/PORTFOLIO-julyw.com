@@ -492,101 +492,150 @@ footer p {
 @media (max-width: 768px) {
   header {
     flex-direction: column;
-    align-items: center;
-    padding: 10px;
+    padding: 15px;
+  }
+
+  .logo-container {
+    margin-bottom: 15px;
   }
 
   nav {
     display: flex;
-    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
   }
 
   nav a {
     margin-left: 0;
-    font-size: 9px;
+    font-size: 8px;
+    padding: 8px 12px;
   }
 
   .banner {
+    margin: 50px 20px;
     flex-direction: column;
-    align-items: center;
-    text-align: left;
-    margin-left: 0;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    align-items: flex-start;
   }
 
   .banner img {
-    visibility: hidden;
+    width: 50%;
+    height: auto;
+    margin: 30px auto 0;
   }
 
   .banner-heading h2 {
-    font-size: 40px;
+    font-size: 36px;
   }
 
   .banner-heading h1 {
-    font-size: 60px;
+    font-size: 48px;
+    margin-bottom: 15px;
   }
 
   .banner p {
-    font-size: 8px;
+    font-size: 8.5px;
   }
 
-  .banner-text{
+  .banner-text {
     gap: 2px;
+    margin-bottom: 30px;
   }
 
-  .about-me {
+  .org-button {
+    padding: 5px 10px;
+    font-size: 8px;
+    max-width: 100%;
+    border-style: 0.5px solid white;
+  }
+
+  .org-button img {
+    width: 10px;
+    margin:0;
+  }
+
+  .contact-content {
     flex-direction: column;
-    text-align: center;
-    padding: 20px;
+    gap: 15px;
   }
 
-  .about-me-image img {
-    max-width: 80%;
-    margin-right: 0;
+  .contact-content-1 {
+    gap: 15px;
   }
 
-  .about-me h3{
-    font-size: 40px;
-    text-align: center;
-    margin: 0;
-    padding: 20px;
+  /* About Me Section */
+  .about-me {
+    padding: 50px 20px;
   }
+
+  .about-me h3 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .about-me h4 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
   .about-me p {
-    margin: 0;
-    padding: 20px;
+    font-size: 16px;
+  }
+
+  .who-am-i, .right-now {
+    flex-direction: column;
     text-align: left;
   }
 
+  .about-me img {
+    max-width: 100%;
+    margin: 20px 0;
+  }
+
+  .about-me-gif img {
+    margin-left: 0;
+  }
+
+  .about-me-gif p {
+    margin-left: 0;
+    margin-top: 40px;
+    font-size: 11px;
+  }
+
+  /* Skills Section */
   .skills {
-    text-align: center;
+    padding: 50px 20px;
   }
 
   .skills h3 {
-    font-size: 40px;
+    font-size: 36px;
     text-align: center;
-    margin: 0;
-    margin-bottom: 20px;
   }
 
   .skills-content {
     flex-direction: column;
-    align-items: center;
-    margin-left: 0;
-    gap: 20px;
+    gap: 30px;
   }
 
+  .skills p {
+    margin-top: 20px;
+  }
+
+  /* Projects Section */
   .projects {
-    padding: 50px;
+    padding: 50px 20px;
   }
 
   .projects h3 {
-    font-size: 40px;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
   }
 
   .project-card {
     flex-direction: column;
-    text-align: center;
+    align-items: flex-start;
   }
 
   .project-card-flexbox {
@@ -594,29 +643,42 @@ footer p {
     align-items: center;
   }
 
-  .contact {
-    padding: 50px;
+  .project-icon img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+  }
+
+  /* Sponsor Me Section */
+  .sponsor-me {
+    padding: 50px 20px;
+  }
+
+  .sponsor-me h3 {
+    font-size: 36px;
     text-align: center;
   }
 
-  .contact h3{
-    font-size: 40px;
-    text-align: center;
+  .sponsor-highlight {
+    font-size: 48px;
+  line-height: 1.2;
+  display: block;
+  margin-bottom: 15px;
   }
 
-  .contact h4{
-    font-size: 18px;
-    text-align: center;
-    margin-bottom: 50px;
+  .sponsor-me h4 {
+    font-size: 24px;
+    margin-bottom: 30px;
   }
 
-  .contact-content-1 {
-    gap: 0;
+  .how-support {
     flex-direction: column;
+    gap: 15px;
+    text-align: left;
   }
 
-  .contact-content-1 i{
-    font-size: 30px;
-    margin: 0;
+  /* Footer */
+  footer {
+    padding: 30px 20px;
   }
 }
