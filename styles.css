@@ -237,38 +237,162 @@ nav a:hover {
 
 .who-am-i-content{
   display: block;
+  line-height: 1.8;
+}
+
+.about-me a{
+  text-decoration: none;
+  color: rgb(145, 199, 253);
+}
+
+.about-me a:hover{
+  color: #4784fd;
+  transition: all 0.3s ease;
 }
 
 .about-me h3{
   font-size: 60px;
-  margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
-.about-me p{
+.who-am-i p{
   font-size: 18px;
+}
+
+.about-me-note {
+  font-size: 20px;
+  text-align: center;
 }
 
 .about-me h4{
   font-size: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  margin-right: 200px;
+}
+
+.about-me-container{
+  max-width: 1000px;
+  margin: auto;
+  padding: 50px;
+  color: rgb(223, 242, 255);
+}
+
+.about-me-container h4{
+  font-size: 30px;
+}
+
+.about-me-container a{
+  color: white;
+  font-weight: 600;
+  text-underline-offset: 7px;
+  transition: all 0.3s ease;
+}
+
+.about-me-container a:hover {
+  color: rgb(182, 214, 254);
+}
+
+.about-title{
+  font-size: 60px;
+  color: white;
+  text-align: center;
+  animation: breathe 3s infinite ease-in-out;
+  margin-bottom: 100px;
+}
+
+.basic{
+  margin-bottom: 50px;
+  transition: all 0.3s ease;
+}
+
+
+.basic-content{
+  font-size: 18px;
+  margin-left: 15px;
+  line-height: 1.7;
+  border: 5px solid rgb(223, 242, 255);
+  border-radius: 40px;
+  padding: 30px;
+}
+
+.basic h4{
+  color:rgb(223, 242, 255);
+  text-align: center;
+}
+
+
+.favorites{
+  transition: all 0.3s ease;
+  margin-bottom: 50px;
+}
+
+.favorites-content{
+  font-size: 18px;
+  line-height: 1.7;
+  border: 5px solid rgb(223, 242, 255);
+  border-radius: 40px;
+  padding: 30px;
+}
+
+.favorites h4{
+  color: rgb(223, 242, 255);
+  margin-left: 40px;
 }
 
 .what-i-like{
-  margin-bottom: 70px;
+  margin-bottom: 50px;
+  transition: all 0.3s ease;
+}
+
+.what-i-like:hover, .right-now:hover, .favorites:hover, .basic:hover{
+  transform: scale(1.05);
 }
 
 .what-i-like ul{
   font-size: 18px;
   margin-left: 15px;
+  line-height: 1.7;
+  border: 5px solid rgb(223, 242, 255);
+  border-radius: 40px;
+  padding: 30px;
+}
+
+.what-i-like h4{
+  color: rgb(223, 242, 255);
+  text-align: right;
+  margin-right: 40px;
 }
 
 .right-now{
-  display: flex;
-  align-items: center;
+  transition: all 0.3s ease;
+  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .right-now-content{
-  display: block;
+  font-size: 18px;
+  line-height: 1.7;
+  border: 5px solid rgb(223, 242, 255);
+  border-radius: 40px;
+  padding: 30px;
+}
+
+.right-now h4{
+  color:rgb(223, 242, 255);
+  margin-left: 40px;
+}
+
+@keyframes breathe {
+  0% { transform: translateY(-10px); }
+  50% { transform: translateY(10px); }
+  100% { transform: translateY(-10px); }
+}
+
+@keyframes swing {
+  0% { transform: rotate(-2deg); }
+  50% { transform: rotate(2deg); }
+  100% { transform: rotate(-2deg); }
 }
 
 .about-me img{
@@ -276,17 +400,7 @@ nav a:hover {
   height: auto; 
   border-radius: 15px;
   margin-right: 100px;
-}
-
-.about-me-gif img{
-  margin: 0;
-  margin-left: 100px;
-}
-
-.about-me-gif p{
-  font-size: 11px;
-  margin-bottom: 10px;
-  margin-left: 100px;
+  animation: swing 1s infinite; 
 }
 
 .about-me-image img.slide-in-image {
@@ -332,7 +446,30 @@ nav a:hover {
   margin-bottom: 20px;
 }
 
-.projects{
+.project-marquee-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.project-marquee {
+  display: flex;
+  width: fit-content;
+  animation: projectScroll 30s linear infinite;
+  margin-bottom: 30px;
+}
+
+.project-marquee-container:hover .project-marquee {
+  animation-play-state: paused;
+}
+
+@keyframes projectScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.projects {
   background-color: #6196ff;
   padding: 100px;
 }
@@ -341,100 +478,127 @@ nav a:hover {
   text-align: center;
   font-size: 60px;
   color: #ffffff;
-  margin-bottom: 50px;
-}
-
-.projects ul {
-  list-style-type: none;
-  padding: 0;
+  margin-bottom: 100px;
 }
 
 .project-card {
   display: flex;
-  align-items: center;
-  gap: 30px;
-  background-color:#005eff;
-  border-radius: 8px;
-  padding: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-width: 350px;
+  max-width: 350px;
+  padding: 30px;
+  background-color: #005eff;
+  border-radius: 12px;
+  margin-right: 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.project-card:hover{
-  box-shadow: 0 0 20px 1px #004cffcc; 
-  transform: scale(1.02)
+.project-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px 1px #004cffcc;
 }
 
-.project-card-2{
-  display: block;
-  align-items: left;
-  gap: 30px;
-  background-color:#005eff;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.project-icon {
+  display: flex;
+  gap: 10px;
+  align-items: center;
   margin-bottom: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-card-2:hover {
-  box-shadow: 0 0 20px 1px #004cffcc; 
-  transform: scale(1.02)
-}
-
-.project-card-2 a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.project-card a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.project-description a{
-  text-decoration: underline;
-  color: white;
-}
-
-.project-card-flexbox {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  margin-bottom: 15px;
-}
-
-.project-icon{
-  display: flex;
-  gap: 5px;
-  align-items: center;
 }
 
 .project-icon img {
-  width: 50px;
-  height: 50px;
-  margin: 15px;
+  width: 30px;
+  height: 30px;
+  margin: 0;
 }
 
 .project-title {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: #ffffff;
   font-weight: bold;
-  margin: 0;
 }
 
 .project-description {
   font-size: 1rem;
   color: #dadada;
-  margin-top: 5px;
-  margin-left: 15px;
+  margin: 0;
+  line-height: 1.5;
+  white-space: normal;
 }
 
-.sponsor-me{
+.project-description a {
+  color: white;
+  text-underline-offset: 7px;
+}
+
+.projects-note {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+.projects-note a{
+  text-decoration: none;
+  color: rgb(0, 89, 255);
+  transition: all 0.3s ease;
+}
+
+.projects-note a:hover{
+  color: rgb(0, 55, 158);
+}
+
+.all-projects{
+  max-width: 1000px;
+  margin: auto;
+  padding: 50px;
+  margin-bottom: 100px;
+}
+
+.all-projects h1{
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 100px;
+  animation: breathe 3s infinite ease-in-out;
+}
+
+.all-projects p{
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.all-projects ul{
+  margin-left: 15px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #dce9fa;
+}
+
+.all-projects a {
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.all-projects h4 {
+  color: white;
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+
+.all-projects a:hover{
+  text-decoration: underline;
+  color: rgb(219, 231, 255);
+  text-underline-offset: 7px;
+}
+
+.sponsor-me {
   padding: 100px;
-  background-color: #2a64d7;
-  text-align: left;
+  background-color:#2a64d7;
 }
 
 .sponsor-me h3{
@@ -574,6 +738,10 @@ footer p {
     margin-bottom: 15px;
   }
 
+  .about-title{
+    font-size: 35px;
+  }
+
   .about-me h4 {
     font-size: 24px;
     margin-bottom: 15px;
@@ -583,7 +751,7 @@ footer p {
     font-size: 16px;
   }
 
-  .who-am-i, .right-now {
+  .who-am-i {
     flex-direction: column;
     text-align: left;
   }
@@ -591,16 +759,6 @@ footer p {
   .about-me img {
     max-width: 100%;
     margin: 20px 0;
-  }
-
-  .about-me-gif img {
-    margin-left: 0;
-  }
-
-  .about-me-gif p {
-    margin-left: 0;
-    margin-top: 40px;
-    font-size: 11px;
   }
 
   /* Skills Section */
