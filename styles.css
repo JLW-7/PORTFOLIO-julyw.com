@@ -390,9 +390,9 @@ nav a:hover {
 }
 
 @keyframes swing {
-  0% { transform: rotate(-2deg); }
-  50% { transform: rotate(2deg); }
-  100% { transform: rotate(-2deg); }
+  0% { transform: rotate(-1.5deg); }
+  50% { transform: rotate(1.5deg); }
+  100% { transform: rotate(-1.5deg); }
 }
 
 .about-me img{
@@ -400,7 +400,7 @@ nav a:hover {
   height: auto; 
   border-radius: 15px;
   margin-right: 100px;
-  animation: swing 1s infinite; 
+  animation: swing 1.5s infinite; 
 }
 
 .about-me-image img.slide-in-image {
