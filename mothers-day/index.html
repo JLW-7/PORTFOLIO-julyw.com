@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Happy Mother's Day!</title>
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body {
-      font-family: 'Open Sans', sans-serif;
-      background: linear-gradient(135deg, #ffe6e6, #fff5f5);
+      font-family: 'Avenir', 'Nunito', sans-serif;
+      background: linear-gradient(135deg, #fff1f1, #fecfcf);
     }
     .handwriting {
       font-family: 'Pacifico', cursive;
@@ -22,9 +23,85 @@
       0% { transform: translateY(0) rotate(0deg); opacity: 1; }
       100% { transform: translateY(-500px) rotate(360deg); opacity: 0; }
     }
+
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        display: flex; 
+        backdrop-filter: blur(30px);
+        justify-content: space-between; 
+        align-items: center; 
+        background-color: rgb(254, 150, 168);
+        padding: 20px;
+        opacity: 0.9;
+    }
+
+    header a{
+        text-decoration: none; 
+        color: white;
+    }
+
+    .logo-container{
+        display: flex;
+    }
+
+    .logo-special a{
+        font-family: 'Arial Black', Arial, sans-serif;
+        font-size: 30px;
+        color: white;
+        position: relative;
+    }
+
+    .logo-special a:after{
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        background-color: white;
+        left: 0;
+        bottom: -3px;
+        transition: width 0.3s ease;
+    }
+
+    .logo-special a:hover:after{
+        width: 100%;
+    }
+
+    .logo a{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        color: white;
+    }
+
+    nav a {
+        margin-left: 20px; 
+        font-size: 18px;
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        transition: all 0.2s ease;
+    }
+
+    nav a:hover {
+        background-color: rgba(255, 255, 255, 0.178);
+        border-radius: 20px;
+        color: rgb(238, 238, 238)
+    }
+
   </style>
 </head>
 <body class="relative overflow-hidden">
+    <header>
+      <div class="logo-container">
+        <div class="logo-special"><a href="/">JULYW</a></div>
+        <div class="logo"><a href="/">.com</a></div>
+      </div>
+      <nav>
+          <a href="/">Home</a><a href="/about/">About</a><a href="/projects/">Projects</a><a href="https://github.com/JLW-7" target="_blank">Github</a><a href="mailto:july.777.wu@gmail.com" target="_blank">Email</a><a href="/mothers-day/">Special Mother's Day Celebration!</a>
+      </nav>
+    </header>
   <div class="min-h-screen flex flex-col justify-center items-center text-center px-4">
     <h1 class="text-5xl md:text-8xl handwriting text-pink-600 mb-20">Happy Mother's Day!</h1>
     <p class="text-lg md:text-xl text-gray-700 max-w-3xl mb-20">To my mom, Liz, and all other moms in the world, thank you for your warmth, strength, and endless love. Thank you for everything! You are the best, and today, we celebrate YOU! 💖</p>
