@@ -231,7 +231,6 @@ nav a:hover {
 .who-am-i{
   display: flex;
   align-items: center;
-  text-align: right;
   margin-bottom: 80px;
 }
 
@@ -293,7 +292,7 @@ nav a:hover {
   color: rgb(182, 214, 254);
 }
 
-.about-title{
+.about-title {
   font-size: 60px;
   color: white;
   text-align: center;
@@ -305,7 +304,6 @@ nav a:hover {
   margin-bottom: 50px;
   transition: all 0.3s ease;
 }
-
 
 .basic-content{
   font-size: 18px;
