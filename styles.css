@@ -82,18 +82,19 @@ nav a:hover {
 }
 
 .banner {
-  margin-top: 100px;
-  margin-left: 100px;
-  margin-bottom: 140px;
+  padding-top: 15vh;
+  padding-left: 100px;
+  padding-bottom: 140px;
+  height: 90.5vh;
   display: flex;
   justify-content: space-between;
 }
 
 .banner img{
-  width: 25%;
-  height: 25%;
+  width: 37vh;
+  height: 37vh;
   margin-right: 100px;
-  margin-top: 70px;
+  margin-top: 100px;
 }
 
 .banner-heading h2{
