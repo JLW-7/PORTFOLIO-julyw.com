@@ -539,6 +539,43 @@ footer p {
   margin: 10px 0;
 }
 
+.fun-facts {
+  max-width: 1000px;
+  margin: 4rem auto;
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 6rem;
+}
+
+.fun-facts h1{
+  font-size: 60px;
+  animation: breathe 3s infinite;
+  margin-bottom: 50px;
+}
+.fact-card {
+  padding: 1.5rem;
+  transition: all 0.2s ease;
+  text-align: left;
+  margin-bottom: 0;
+}
+.fact-card p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+.fact-card a {
+  color: white;
+  text-underline-offset: 7px;
+}
+.fact-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.emoji {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
 /* Mobile adjustments */
 @media (max-width: 768px) {
   header {
