@@ -11,72 +11,97 @@
   <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png">
   <link rel="manifest" href="../assets/site.webmanifest">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Avenir', 'Nunito', sans-serif;
+      background-color: #256dfe;
+      color: white;
+      overflow-x: hidden;
+    }
+    
+    .fun-facts {
+      max-width: 1000px;
+      margin: 4rem auto;
+      padding: 1rem;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+      margin-bottom: 6rem;
+    }
+
+    .fun-facts h1{
+      font-size: 60px;
+      animation: breathe 3s infinite;
+      margin-bottom: 50px;
+    }
+    .fact-card {
+      padding: 1.5rem;
+      transition: all 0.2s ease;
+      text-align: left;
+      margin-bottom: 0;
+    }
+    .fact-card p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+    .fact-card a {
+      color: white;
+      text-underline-offset: 7px;
+    }
+    .fact-card:hover {
+      background: rgba(255, 255, 255, 0.05);
+    }
+    .emoji {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+    }
+  </style>
 </head>
-
 <body>
-    <!-- Header -->
-    <header>
-      <div class="logo-container">
-        <div class="logo-special"><a href="/">JULYW</a></div>
-        <div class="logo"><a href="/">.com</a></div>
-      </div>
-      <nav>
-          <a href="/">Home</a><a href="/about/">About</a><a href="/projects/">Projects</a><a href="https://github.com/JLW-7" target="_blank">Github</a><a href="mailto:july.777.wu@gmail.com" target="_blank">Email</a>
-      </nav>
-    </header>
-
-    <div class="about-me-container">
-      <h1 class="about-title">More About Me...</h1>
-      <div class="basic">
-        <h4>The Basic Stuff</h4>
-        <div class="basic-content">
-          <p>name: July (like the month, not pronounced Julie)</p>
-          <p>pronouns: She/Her (yes, I look like a boy but its just that I think short hair is cool)</p>
-          <p>nickname: lyly (my friends like to call me that...)</p>
-          <p>year of birth: 2012</p>
-          <p>mbti: INFP, which I think is that green little guy called the mediator</p>
-          <p></p>
-        </div>
-      </div>
-      <div class="favorites">
-        <h4>Favorites</h4>
-        <div class="favorites-content">
-          <p>Fav food: 🍝 Spaghetti</p>
-          <p>Fav color: 💙 Blue (As you can see from this website)</p>
-          <p>Fav animal(s): 🐶 (I have a pet Labrador called Jolie, she's sooo cute)</p>
-          <p>Fav song(s): <a href="https://www.youtube.com/watch?v=UtF6Jej8yb4" target="_blank">The Nights, by Avicii</a></p>
-          <p>Fav lyrics: "Live a life you will remember." - <a href="https://www.youtube.com/watch?v=UtF6Jej8yb4" target="_blank">The Nights, Avicii</a></p>
-          <p>Fav quote: "No pain no gain! 💪" - I forgot who said it</p>
-          <p>Fav music artist(s): One Direction, Alan Walker, One Republic</p>
-          <p>Fav programming langs: Python, HTML, Swift</p>
-        </div>
-      </div>
-      <div class="what-i-like">
-        <h4>Some Stuff I Like</h4>
-        <ul>
-          <li><strong>Tech: </strong>Especially web/app development, AI, machine learning, and cybersecurity.</li>
-          <li><strong>Astronomy: </strong>I'm not an astronomer just a plain space enthusiast. I like  exploring black holes, strange matter, neutron stars and that stuff.</li>
-          <li><strong>Sports: </strong>Swimming and volleyball. Proud to say I'm actually a professional swimming athlete, check out my <a href="https://www.swimcloud.com/swimmer/1340903" target="_blank">swimcloud profile</a>.</li>
-          <li><strong>Investment: </strong>Turning numbers into (hopefully) more numbers. </li>
-        </ul>
-      </div>
-      <div class="right-now">
-        <h4>Right Now, I'm Probably...</h4>
-        <div class="right-now-content">
-          <p>💻 Writing code, breaking code, fixing code… repeat</p>
-          <p>🤖 Experimenting with AI because I want robots to do my homework (no luck so far 😂)</p>
-          <p>🔭 Stargazing. I really love it, makes me feel infinite and aliveeee</p>
-          <p>🌌 Contemplating mysteries of the universe, like how my wifi always dies when I need it most 🙄</p>
-          <p>🏊 Swimming. Sometimes I prefer water in my lungs over bugs in my code :)</p>
-          <p>🎧 Listening to music! It's a nice way to slow down and relax...</p>
-        </div>
-      </div>
+  <div class="sparkle-top" id="sparkle-top"></div>
+  <header>
+    <div class="logo-container">
+      <div class="logo-special"><a href="/">JULYW</a></div>
+      <div class="logo"><a href="/">.com</a></div>
     </div>
+    <nav>
+      <a href="/">Home</a><a href="/about/">About</a><a href="/projects/">Projects</a><a href="https://github.com/JLW-7" target="_blank">Github</a><a href="mailto:july.777.wu@gmail.com" target="_blank">Email</a>
+    </nav>
+  </header>
 
-    <footer>
-      <h3>julyw.com</h3>
-      <p>&copy; 2025 julyw.com. All content on this website is licensed under the CC-BY-SA license. All Rights Reserved.</p>
-    </footer>
+  <div class="fun-facts">
+    <h1>More About Me!</h1>
+    <div class="fact-card">
+      <div class="emoji">💡 Tech</div>
+      <p>As you may already know, I love building meaningful tech that can not only help me learn, but also have a positive impact on others! For example, my beginner project, a versatile calculator web app has now over 100+ users from 9+ countries and 500+ clicks!</p>
+    </div>
+    <div class="fact-card">
+      <div class="emoji">🏊 Swimming</div>
+      <p>I'm a <strong>professional swimmer</strong> representing Shanghai, and swimming has been my passion for nearly 8 years. I've won countless medals for my city and my school, which I keep on a special wall for motivation. Still, the journey hasn’t been easy — I’ve torn shoulder ligaments, fractured my elbow, and sprained my ankle — but through every setback, I’ve always returned to the water, stronger and faster.</p>
+      <br>
+      <p>Wanna learn more? Check out my <a href="https://www.swimcloud.com/swimmer/1340903/" target="_blank">swimcloud profile.</a></p>
+    </div>
+    <div class="fact-card">
+      <div class="emoji">🌌 Astronomy</div>
+      <p>I’m deeply fascinated by the universe. There’s so much humanity has yet to discover — from black holes to neutron stars and strange matter. In my spare time, I like to stargaze with a telescope in my backyard and explore what lies beyond this world.</p>
+      <br>
+      <p><q>Remember to look up at the stars, and not down at your feet.</q>- Stephen Hawking</p>
+    </div>
+    <div class="fact-card">
+      <div class="emoji">📊 Economics</div>
+      <p>I've been learning stocks and investing since I was 10 with my Dad. Proud to say I've already bought some stocks and tried to analyze market trends, study companies, and learn how financial systems work! It’s a field that challenges me to think strategically and stay informed.</p>
+    </div>
+  </div>
+
+  <footer>
+    <h3>julyw.com</h3>
+    <p>&copy; 2025 julyw.com. All content on this website is licensed under the CC-BY-SA license. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
