@@ -13,6 +13,28 @@ body {
   font-family: "Avenir", "Nunito", sans-serif;
   background-color: #256dfe;
   color: white;
+  cursor: none;
+}
+
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 45px;
+  height: 45px;
+  background-color: rgba(0, 63, 163, 0.8); /* Tailwind blue-500 */
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-55%, -55%);
+  transition: width 0.2s ease, height 0.2s ease, background-color 0.2s ease;
+  z-index: 9999;
+}
+
+/* When hovering over links */
+.cursor.hover {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 52, 137, 0.5);
 }
 
 header {
