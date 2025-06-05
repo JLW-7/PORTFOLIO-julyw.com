@@ -6,7 +6,8 @@
 - **HTM**L: for basic layout (e.g. website content)
 - **CSS**: for styling (e.g. animations)
 - **JS**: for interactivity (e.g. custom cursor)
-Yep, the classic HTML + CSS + JS 😉
+
+Yep, I know, the classic HTML + CSS + JS 😉
 
 ## Contributing
 I welcome contributions to make this site better! Feel free to open pull requests.
