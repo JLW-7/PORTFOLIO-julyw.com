@@ -16,6 +16,10 @@ body {
   cursor: none;
 }
 
+body a{
+  cursor: none;
+}
+
 .cursor {
   position: fixed;
   top: 0;
@@ -25,7 +29,7 @@ body {
   background-color: rgba(0, 63, 163, 0.8); /* Tailwind blue-500 */
   border-radius: 50%;
   pointer-events: none;
-  transform: translate(-55%, -55%);
+  transform: translate(-50%, -50%);
   transition: width 0.2s ease, height 0.2s ease, background-color 0.2s ease;
   z-index: 9999;
 }
@@ -600,6 +604,9 @@ footer p {
 }
 /* Mobile adjustments */
 @media (max-width: 768px) {
+  .cursor{
+    visibility: hidden;
+  }
   header {
     flex-direction: column;
     padding: 15px;
@@ -784,5 +791,13 @@ footer p {
   /* Footer */
   footer {
     padding: 30px 20px;
+  }
+
+  .fun-facts h1{
+    font-size: 40px;
+  }
+
+  .all-projects h1{
+    font-size: 50px;
   }
 }
