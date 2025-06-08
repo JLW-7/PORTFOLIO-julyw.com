@@ -18,7 +18,13 @@ body {
 
 body a{
   cursor: none;
+  transition: color 0.3s ease
 }
+
+body a:hover{
+  color:rgb(179, 207, 255)
+}
+
 
 .cursor {
   position: fixed;
@@ -45,14 +51,20 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: flex; 
-  backdrop-filter: blur(30px);
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center; 
-  background-color: #93c2ff;
-  padding: 20px;
-  opacity: 0.9;
+  background-color: #93c2ffe7;
+  padding: 25px;
+  transition: all 0.3s ease;
+}
+
+header.transparent {
+  background-color: transparent;
+}
+
+header.compress {
+  padding-block: 15px;
 }
 
 header a{
@@ -99,10 +111,11 @@ nav a {
   text-decoration: none;
   padding: 10px 15px;
   transition: all 0.2s ease;
+  margin-left: 80px;
 }
 
 nav a:hover {
-  background-color: rgba(255, 255, 255, 0.178);
+  background-color: rgba(255, 255, 255, 0.097);
   border-radius: 20px;
   color: rgb(238, 238, 238)
 }
@@ -369,7 +382,7 @@ nav a:hover {
 .project-marquee {
   display: flex;
   width: fit-content;
-  animation: projectScroll 30s linear infinite;
+  animation: projectScroll 50s linear infinite;
   margin-bottom: 30px;
 }
 
@@ -555,14 +568,16 @@ footer {
 footer h3 {
   margin: 0;
 }
-  
-.footer-links {
-  margin: 30px 0;
-}
- 
+
 footer p {
   font-size: 14px;
   margin: 10px 0;
+}
+
+footer a {
+  text-decoration: underline;
+  text-underline-offset: 7px;
+  color: inherit;
 }
 
 .fun-facts {

@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body class="flex flex-col items-center justify-center min-h-screen text-center px-4">
-  <a href="/" class="absolute top-4 left-4 flex items-center text-white bg-blue-800 px-5 p-2 rounded-full text-lg group duration-300 hover:bg-blue-700">
+  <a href="/" class="absolute top-4 left-4 flex items-center text-white bg-blue-800 px-5 p-2 rounded-full text-lg group transition duration-300 hover:bg-blue-700">
     <span class="transition-transform duration-300 transform group-hover:-translate-x-1">←</span>
     <span class="ml-2">Back to Home</span>
   </a>
@@ -17,10 +17,10 @@
     <h1 class="text-2xl font-bold text-blue-600 mb-4">Oops, this page is now secret 🤫</h1>
     <p class="mb-6 text-gray-700">Please enter a <strong>secret code</strong> to continue!</p>
     <input id="codeInput" type="text" placeholder="Enter secret code..." class="w-full px-4 py-2 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 mb-4 text-black">
-    <button onclick="checkCode()" class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 rounded-lg transition">Submit</button>
+    <button onclick="checkCode()" class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 rounded-lg transition cursor-none">Submit</button>
   </div>
-  <p id="whyToggle" class="mt-4 text-white cursor-pointer hover:underline">Don't know the code?</p>
-  <p id="whyAnswer" class="mt-10 text-white hidden text-3xl">You guess 🫵 I'm not telling.</p>
+  <p id="whyToggle" class="mt-4 text-white hover:underline">You're probably wondering... Why is this?</p>
+  <p id="whyAnswer" class="mt-10 text-white hidden max-w-md text-left">Sorry for the inconvenience, this is due to private information and copyright issues. <br><br> If access is required, please <a href="mailto:toothless2012.pp@gmail.com" class="text-blue-200 underline underline-offset-4 hover:text-white">email me</a> directly for the code, and make sure to clarify your reason.</p>
   <script src="../script.js"></script>
 </body>
 </html>

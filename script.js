@@ -7,7 +7,7 @@ function checkCode() {
   const input = document.getElementById('codeInput').value.trim();
   const urlParams = new URLSearchParams(window.location.search);
   const redirect = urlParams.get('redirect');
-  if (input === 'JulyIsTheBest') {
+  if (input === 'auh hell nah') {
     alert("Yep! You'll be redirected in a sec :)");
     window.location.href = redirect;
   } else {
@@ -59,6 +59,25 @@ const addHoverEvents = () => {
 
 // Run after DOM loads
 document.addEventListener('DOMContentLoaded', addHoverEvents);
+
+document.addEventListener("DOMContentLoaded", function () {
+  const header = document.querySelector("header");
+
+  // Set initial transparency
+  if (window.scrollY === 0) {
+    header.classList.add("transparent");
+  }
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 100) {
+      header.classList.remove("transparent");
+      header.classList.add("compress")
+    } else {
+      header.classList.add("transparent");
+      header.classList.remove("compress")
+    }
+  });
+});
 
 
   
