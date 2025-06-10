@@ -1,12 +1,12 @@
 function isInView(element) {
-    const rect = element.getBoundingClientRect();
-    return rect.top >= 0 && rect.bottom <= window.innerHeight;
+  const { top, bottom } = element.getBoundingClientRect();
+  return top >= 0 && bottom <= window.innerHeight;
 }
 
 function checkCode() {
   const input = document.getElementById('codeInput').value.trim();
-  const urlParams = new URLSearchParams(window.location.search);
-  const redirect = urlParams.get('redirect');
+  const redirect = new URLSearchParams(window.location.search).get('redirect');
+
   if (input === 'auh hell nah') {
     alert("Yep! You'll be redirected in a sec :)");
     window.location.href = redirect;
@@ -16,68 +16,33 @@ function checkCode() {
 }
 
 window.addEventListener('scroll', () => {
-    const image = document.querySelector('.about-me-image img.slide-in-image');
-    
-    if (isInView(image)) {
-      image.classList.add('visible');
-    }
+  const image = document.querySelector('.about-me-image img.slide-in-image');
+  if (image && isInView(image)) image.classList.add('visible');
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  const toggle = document.getElementById('whyToggle');
-  const answer = document.getElementById('whyAnswer');
-
-  toggle.addEventListener('click', () => {
-    answer.classList.toggle('hidden');
+  document.getElementById('whyToggle')?.addEventListener('click', () => {
+    document.getElementById('whyAnswer')?.classList.toggle('hidden');
   });
-});
 
-// Create the cursor element
-const cursor = document.createElement('div');
-cursor.classList.add('cursor');
-document.body.appendChild(cursor);
+  // Create cursor element
+  const cursor = Object.assign(document.createElement('div'), { className: 'cursor' });
+  document.body.appendChild(cursor);
 
-// Move cursor with mouse
-document.addEventListener('mousemove', e => {
-  cursor.style.top = e.clientY + 'px';
-  cursor.style.left = e.clientX + 'px';
-});
-
-// Hover effect for links
-const addHoverEvents = () => {
-  const links = document.querySelectorAll('a');
-
-  links.forEach(link => {
-    link.addEventListener('mouseenter', () => {
-      cursor.classList.add('hover');
-    });
-    link.addEventListener('mouseleave', () => {
-      cursor.classList.remove('hover');
-    });
+  document.addEventListener('mousemove', ({ clientY, clientX }) => {
+    Object.assign(cursor.style, { top: `${clientY}px`, left: `${clientX}px` });
   });
-};
 
-// Run after DOM loads
-document.addEventListener('DOMContentLoaded', addHoverEvents);
+  document.querySelectorAll('a').forEach(link => {
+    link.addEventListener('mouseenter', () => cursor.classList.add('hover'));
+    link.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
+  });
 
-document.addEventListener("DOMContentLoaded", function () {
   const header = document.querySelector("header");
-
-  // Set initial transparency
-  if (window.scrollY === 0) {
-    header.classList.add("transparent");
-  }
+  if (window.scrollY === 0) header?.classList.add("transparent");
 
   window.addEventListener("scroll", () => {
-    if (window.scrollY > 100) {
-      header.classList.remove("transparent");
-      header.classList.add("compress")
-    } else {
-      header.classList.add("transparent");
-      header.classList.remove("compress")
-    }
+    header?.classList.toggle("transparent", window.scrollY <= 100);
+    header?.classList.toggle("compress", window.scrollY > 100);
   });
 });
-
-
-  
