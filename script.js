@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (window.scrollY === 0) header?.classList.add("transparent");
 
   window.addEventListener("scroll", () => {
-    header?.classList.toggle("transparent", window.scrollY <= 100);
-    header?.classList.toggle("compress", window.scrollY > 100);
+    header?.classList.toggle("transparent", window.scrollY <= 20);
+    header?.classList.toggle("compress", window.scrollY > 20);
   });
 });
