@@ -18,7 +18,10 @@ body {
 
 body a{
   cursor: none;
-  transition: color 0.3s ease
+  transition: color 0.3s ease;
+  text-decoration: underline; 
+  text-underline-offset: 7px;
+  color: white;
 }
 
 body a:hover{
@@ -74,16 +77,17 @@ header a{
 
 .logo-container{
   display: flex;
+  align-items: baseline;
 }
 
-.logo-special a{
+.logo-container {
   font-family: 'Arial Black', Arial, sans-serif;
   font-size: 30px;
   color: inherit;
   position: relative;
 }
 
-.logo-special a:after{
+.logo-container:after{
   content: '';
   position: absolute;
   width: 0;
@@ -94,7 +98,7 @@ header a{
   transition: width 0.3s ease;
 }
 
-.logo-special a:hover:after{
+.logo-container:hover:after{
   width: 100%;
 }
 
@@ -109,19 +113,19 @@ nav a {
   font-size: 18px;
   color: inherit;
   text-decoration: none;
-  padding: 10px 15px;
-  transition: all 0.2s ease;
+  padding: 15px 30px;
+  transition: all 0.1s ease;
   margin-left: 80px;
 }
 
 nav a:hover {
   background-color: rgba(255, 255, 255, 0.097);
-  border-radius: 20px;
+  border-radius: 40px;
   color: rgb(238, 238, 238)
 }
 
 .banner {
-  margin-top: 100px;
+  margin-top: 90px;
   margin-left: 100px;
   margin-bottom: 140px;
   display: flex;
@@ -479,13 +483,13 @@ nav a:hover {
   max-width: 1000px;
   margin: auto;
   padding: 50px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .all-projects h1{
   font-size: 60px;
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   animation: breathe 3s infinite ease-in-out;
 }
 
@@ -566,7 +570,8 @@ footer {
 }
   
 footer h3 {
-  margin: 0;
+  font-size: 18px;
+  font-family: 'Avenir', 'Nunito';
 }
 
 footer p {
@@ -580,43 +585,113 @@ footer a {
   color: inherit;
 }
 
-.fun-facts {
-  max-width: 1000px;
-  margin: 4rem auto;
-  padding: 1rem;
+.contact-form-page h1 {
+  font-size: 60px;
   text-align: center;
-  position: relative;
-  z-index: 1;
-  margin-bottom: 6rem;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  animation: breathe 3s infinite ease-in-out;
 }
 
-.fun-facts h1{
-  font-size: 60px;
-  animation: breathe 3s infinite;
+.contact-form-page p {
+  text-align: center;
   margin-bottom: 50px;
+  font-size: 20px;
+  margin-bottom: 4rem;
 }
-.fact-card {
-  padding: 1.5rem;
-  transition: all 0.2s ease;
-  text-align: left;
-  margin-bottom: 0;
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+  margin-bottom: 4rem;
 }
-.fact-card p {
-  font-size: 1.1rem;
-  line-height: 1.7;
+
+.contact-form label {
+  font-weight: 700;
+  cursor:none;
 }
-.fact-card a {
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #00429e;
+  outline: none;
+}
+
+.contact-form button {
+  background-color: #0042b4;
   color: white;
-  text-underline-offset: 7px;
+  border: none;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 20px;
+  transition: background-color 0.2s ease;
+  margin-top: 2rem;
+  font-family: inherit;
+  cursor: none;
 }
-.fact-card:hover {
-  background: rgba(255, 255, 255, 0.1);
+
+.contact-form button:hover {
+  background-color:  #00338c;
 }
-.emoji {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  font-weight: 600;
+
+.slack-note {
+  margin-top: 2rem;
 }
+
+.thanks {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+  margin-top: 4rem;
+}
+
+.thanks h1 {
+  font-size: 60px;
+}
+
+.thanks h4 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.shrek-dance {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shrek-dance img{
+  width: 50%;
+  height: auto;
+}
+
+.find-me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+.find-me h3{
+  font-size: 30px;
+}
+
 /* Mobile adjustments */
 @media (max-width: 768px) {
   .cursor{
