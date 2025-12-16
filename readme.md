@@ -1,6 +1,6 @@
 # JulyW.com
 
-[**julyw.com**](https://julyw.com) is my personal portfolio website — a space where I introduce who I am, what I love, and the projects I’ve built. It’s a hub for my favorite work, creative ideas, and experiments in tech, design, and beyond.
+[**julyw.com**](https://julyw.com)
 
 ## Tech Stack
 - **HTML**: for basic layout (e.g. website content)
@@ -8,11 +8,8 @@
 - **Javascript**: for interactivity (e.g. custom cursor)
 
 ## Contributing
-I welcome contributions to make this site better! Feel free to open pull requests.
-
-> [!NOTE]
-> Notice some pages of this website are restricted and you'll need a secret code to view? That's not an error, I built these restrictions on purpose due to current circumstances and copyright issues.
+I welcome contributions to make this site better. Feel free to open PRs.
 
 ---
 
-#### Built to reflect my personality and passions, this site is always evolving — just like I am ✨
+#### Built with 🩵 by July
